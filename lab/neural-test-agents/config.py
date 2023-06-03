@@ -1,2 +1,2 @@
-CHAT_1 = "gera mensagens como se você estivesse interagindo com outra pessoa?"
+CHAT_1 = "cria uma pergunta sobre programação, exemplo: Oi, como faço um for em python?"
 CHAT_2 = "Oi"
