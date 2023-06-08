@@ -7,6 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def create_dialog(msg):
+    """
+    Create a dialog from a message
+    """
     token = getenv('API')
     openai.api_key = token
 
@@ -15,9 +18,9 @@ def create_dialog(msg):
     completion = openai.Completion.create(
         engine=model_engine,
         prompt=msg,
-        max_tokens=1024,
-        top_p=1,
+        max_tokens=2048,
         stop=None,
+        n=1,
         temperature=0.8
     )
 
